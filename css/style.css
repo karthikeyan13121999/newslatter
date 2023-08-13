@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(235, 18%, 26%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    background-color: #ffff;
+    padding: 20px;
+    border-radius: 20px;
+    width: 700px;
+}
+
+.leftside {
+    width: 60%;
+    padding: 20px;
+}
+
+.rightside {
+    width: 40%;
+}
+
+.rightside img {
+    width: 100%;
+}
+
+h1{
+    padding-top: 25px;
+    color: hsl(235, 18%, 26%); 
+    font-size: 48px;
+}
+
+p{
+    width: 300px;
+    padding-top: 10px;
+    color: hsl(235, 18%, 26%);
+    font-size: small;
+}
+
+ul{
+    width: 300px;
+    list-style: none;
+    padding-top: 10px;
+    color: hsl(235, 18%, 26%);
+    font-size: small;
+}
+
+li{
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding-top: 15px ;
+}
+form div{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+svg{
+    padding-right: 5px;
+}
+
+label {
+    font-size: 10px;
+    font-weight:700;
+    color: hsl(235, 18%, 26%);
+    padding-bottom: 5px;
+}
+
+input {
+    padding: 15px;
+    border-radius: 10px;
+    border-color: hsl(231, 7%, 60%);
+    border-width: 1px;
+    border-style: solid;
+    cursor: pointer;
+}
+
+button {
+    padding: 15px;
+    background-color: hsl(234, 29%, 20%);
+    color: #ffff;
+    border-radius: 10px;
+    border-style: none;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(4, 100%, 67%);
+    transition: all 1s;
+}
+
+.hide {
+    display: none;
+}
+
+.container1{
+    background: #ffff;
+    width: 400px;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.container1 h1 {
+    font-size: 40px;
+}
+
+.container1 span {
+    font-weight: bold;
+}
+
+.container1 p {
+    padding-bottom: 15px;
+}
+
+.container1 button {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+  .container{
+    flex-direction: column-reverse;
+    width: 95%;
+    padding: 0;
+    border-radius: 0px 0px 20px 20px;
+  }
+
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  .container h1{
+    font-size: 30px;
+  }
+
+  .rightside{
+    width: 100%;
+  }
+  .leftside{
+    width: 100%;
+    padding: 20px;
+  }
+  .rightside img {
+    content: url(/img/illustration-sign-up-mobile.svg);
+  }
+  form {
+    width: 90%;
+  }
+  .container1{
+    min-height: 100vh;
+  }
+}
